@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d8" for="edge" attr.name="id" attr.type="string"/>
+<key id="d7" for="edge" attr.name="label" attr.type="string"/>
+<key id="d6" for="node" attr.name="label" attr.type="string"/>
+<key id="d5" for="node" attr.name="y" attr.type="string"/>
+<key id="d4" for="node" attr.name="x" attr.type="string"/>
+<key id="d3" for="node" attr.name="shape_type" attr.type="string"/>
+<key id="d2" for="node" attr.name="name" attr.type="string"/>
+<key id="d1" for="node" attr.name="port" attr.type="long"/>
+<key id="d0" for="node" attr.name="labelV" attr.type="string"/>
+<graph edgedefault="directed"><node id="n0">
+  <data key="d0">service_interface</data>
+  <data key="d1">0</data>
+  <data key="d2">client</data>
+  <data key="d3">ShinyPlateNode</data>
+  <data key="d4">-7.253244938669468</data>
+  <data key="d5">-86.18477553822319</data>
+  <data key="d6">bookstore-api-gateway-service</data>
+</node>
+<node id="n1">
+  <data key="d0">service_interface</data>
+  <data key="d1">0</data>
+  <data key="d2">client</data>
+  <data key="d3">ShinyPlateNode</data>
+  <data key="d4">13.623708186330532</data>
+  <data key="d5">-33.98772031583451</data>
+  <data key="d6">bookstore-order-service</data>
+</node>
+<node id="n2">
+  <data key="d0">service_interface</data>
+  <data key="d1">0</data>
+  <data key="d2">client</data>
+  <data key="d3">ShinyPlateNode</data>
+  <data key="d4">103.87507384151286</data>
+  <data key="d5">18.209334906554176</data>
+  <data key="d6">bookstore-catalog-service</data>
+</node>
+<node id="n3">
+  <data key="d0">service_interface</data>
+  <data key="d1">0</data>
+  <data key="d2">client</data>
+  <data key="d3">ShinyPlateNode</data>
+  <data key="d4">-98.41076026359607</data>
+  <data key="d5">18.209334906554176</data>
+  <data key="d6">bookstore-payment-service</data>
+</node>
+<node id="n4">
+  <data key="d0">service_interface</data>
+  <data key="d1">0</data>
+  <data key="d2">client</data>
+  <data key="d3">ShinyPlateNode</data>
+  <data key="d4">11.640309748830532</data>
+  <data key="d5">70.40639012894286</data>
+  <data key="d6">bookstore-billing-service</data>
+</node>
+<edge source="n0" target="n1">
+  <data key="d7">
+            </data>
+  <data key="d8">e0</data>
+</edge>
+<edge source="n0" target="n2">
+  <data key="d7">
+            </data>
+  <data key="d8">e1</data>
+</edge>
+<edge source="n1" target="n3">
+  <data key="d7">
+            </data>
+  <data key="d8">e2</data>
+</edge>
+<edge source="n1" target="n4">
+  <data key="d7">
+            </data>
+  <data key="d8">e3</data>
+</edge>
+</graph></graphml>

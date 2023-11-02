@@ -1,0 +1,40 @@
+trovare lib per leggere xml in python:
+
+- xml.etree.ElementTree — The ElementTree XML API   (link: https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree) **per ora scelto** 
+
+- xml.dom — The Document Object Model API (link: https://docs.python.org/3/library/xml.dom.html#module-xml.dom)
+
+- xml.dom.minidom — Minimal DOM implementation (link: https://docs.python.org/3/library/xml.dom.minidom.html#module-xml.dom.minidom)
+
+- xml.dom.pulldom — Support for building partial DOM trees (link: https://docs.python.org/3/library/xml.dom.pulldom.html#module-xml.dom.pulldom)
+
+- xml.sax — Support for SAX2 parsers (link: https://docs.python.org/3/library/xml.sax.html#module-xml.sax)
+
+- xml.parsers.expat — Fast XML parsing using Expat (link: https://docs.python.org/3/library/pyexpat.html#module-xml.parsers.expat)
+
+
+trovare lib per lavorare con la creazione di json in python:
+
+
+
+
+
+
+history:
+-scelta library networkx dopo aver scoperto la tipologia dei dati che dovevo analizzare tramite gli esempi che sono trovabili nella cartella git di Aroma
+-testing library con implementazione add/delete/modify per nodi e archi tramite l'utilizzo della libreria sopraccitata tramite la documentazione della libreria stessa
+tramite l'utilizzo della presentazione data da Paolo Bacchiega e la ricerca di dati all'interno dei graphml e della documentazione di swagger.io
+-creazione estrattore di dati per No Gateway API 
+-inserimento testing modificato a effettivo codice e No Gateway API al main
+-creazione estrattore di dati per Shared Persistence
+-inserimento testing modificato a effettivo codice e Shared Persistence al main
+-creazione estrattore di dati per Cyclic Dependency
+-inizio analisi json e prima riunione con Paolo Bacchiega
+-studio forma e costruzione singolo nodo
+-studio forma archi e estrazione dati per nodo
+-inserimento creazione dati opsionali
+-confronto struttura e ricerca dati mancanti nel codice di Aroma
+
+
+
+

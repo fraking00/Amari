@@ -1,0 +1,147 @@
+[
+    [
+        {
+            "traceId": "trace1",
+            "parentId": "api-gateway_id",
+            "id": "api-gateway_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            },
+            "tags": {
+                "db.system": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace1",
+            "parentId": "api-gateway_id",
+            "id": "serviceA_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            },
+            "tags": {
+                "db.system": "serviceC"
+            }
+        },
+        {
+            "traceId": "trace1",
+            "parentId": "serviceA_id",
+            "id": "serviceC_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceC"
+            },
+            "remoteEndpoint": {
+                "serviceName": "redis"
+            },
+            "tags": {
+                "db.system": "redis"
+            }
+        }
+    ],
+    [
+        {
+            "traceId": "trace2",
+            "parentId": "api-gateway_id",
+            "id": "api-gateway_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            },
+            "tags": {
+                "db.system": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "api-gateway_id",
+            "id": "serviceA_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            },
+            "tags": {
+                "db.system": "serviceB"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "serviceA_id",
+            "id": "serviceB_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceB"
+            },
+            "tags": {
+                "db.system": "serviceC"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "serviceB_id",
+            "id": "serviceC_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceC"
+            },
+            "remoteEndpoint": {
+                "serviceName": "redis"
+            },
+            "tags": {
+                "db.system": "redis"
+            }
+        }
+    ],
+    [
+        {
+            "traceId": "trace3",
+            "parentId": "api-gateway_id",
+            "id": "api-gateway_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            },
+            "tags": {
+                "db.system": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace3",
+            "parentId": "api-gateway_id",
+            "id": "serviceA_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            },
+            "tags": {
+                "db.system": "serviceB"
+            }
+        },
+        {
+            "traceId": "trace3",
+            "parentId": "serviceA_id",
+            "id": "serviceB_id",
+            "timestamp": 1681911760601649,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceB"
+            },
+            "remoteEndpoint": {
+                "serviceName": "sql"
+            },
+            "tags": {
+                "db.system": "sql"
+            }
+        }
+    ]
+]

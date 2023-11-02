@@ -1,0 +1,6 @@
+api-gateway -> serviceA
+api-gateway -> serviceA -> serviceB
+api-gateway -> serviceA -> serviceB -> serviceB-db
+api-gateway -> serviceA -> serviceB -> serviceC
+api-gateway -> serviceA -> serviceC
+api-gateway -> serviceA -> serviceC -> serviceB-db

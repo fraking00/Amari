@@ -1,0 +1,3209 @@
+[
+  [
+    {
+      "traceId": "7513e6e66ae184d7",
+      "parentId": "7513e6e66ae184d7",
+      "id": "be1291cdad3797e0",
+      "name": "get-items",
+      "timestamp": 1647947233204000,
+      "duration": 4622,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "7513e6e66ae184d7",
+      "id": "7513e6e66ae184d7",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947233203000,
+      "duration": 5336,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "44c181b99301fe46",
+      "parentId": "44c181b99301fe46",
+      "id": "58cd3233f7ef1c5e",
+      "name": "execute-search",
+      "timestamp": 1647947233187000,
+      "duration": 11131,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "RepositorySearchController",
+        "mvc.controller.method": "executeSearch"
+      }
+    },
+    {
+      "traceId": "44c181b99301fe46",
+      "id": "44c181b99301fe46",
+      "kind": "SERVER",
+      "name": "http:/orders/search/customerid",
+      "timestamp": 1647947233186000,
+      "duration": 11955,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "c413f55384a21ac1",
+      "parentId": "c413f55384a21ac1",
+      "id": "5bcfa4ec01b71c3e",
+      "name": "delete",
+      "timestamp": 1647947233104000,
+      "duration": 1811,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "CartsController",
+        "mvc.controller.method": "delete"
+      }
+    },
+    {
+      "traceId": "c413f55384a21ac1",
+      "id": "c413f55384a21ac1",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074",
+      "timestamp": 1647947233104000,
+      "duration": 2497,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "5cc91af41cdde799",
+      "id": "713c8c5622f56d40",
+      "kind": "CLIENT",
+      "name": "http:/customers/6239ab3cee11cb000195b074",
+      "timestamp": 1647947232036000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/customers/6239ab3cee11cb000195b074",
+        "http.url": "http://user/customers/6239ab3cee11cb000195b074"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "6438d8512e4c2481",
+      "id": "3adabbee8818bb1c",
+      "kind": "CLIENT",
+      "name": "http:/addresses/6239ab6cee11cb000195b076",
+      "timestamp": 1647947232036000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/addresses/6239ab6cee11cb000195b076",
+        "http.url": "http://user/addresses/6239ab6cee11cb000195b076"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "4faa50aa536893a1",
+      "id": "6438d8512e4c2481",
+      "name": "get-resource",
+      "timestamp": 1647947232036000,
+      "duration": 6009,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "e5e7bba4bd2c1289",
+      "id": "5cc91af41cdde799",
+      "name": "get-resource",
+      "timestamp": 1647947232036000,
+      "duration": 5888,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "4faa50aa536893a1",
+      "name": "async",
+      "timestamp": 1647947232036000,
+      "duration": 6077,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-170"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "e5e7bba4bd2c1289",
+      "name": "async",
+      "timestamp": 1647947232036000,
+      "duration": 5963,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-171"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "432901aa25545a03",
+      "id": "8b6e324f47962590",
+      "name": "new-order",
+      "timestamp": 1647947232036000,
+      "duration": 1060932,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "OrdersController",
+        "mvc.controller.method": "newOrder"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "d0a30b8a7d299982",
+      "id": "29016dda93206837",
+      "kind": "CLIENT",
+      "name": "http:/cards/6239ab53ee11cb000195b075",
+      "timestamp": 1647947232038000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/cards/6239ab53ee11cb000195b075",
+        "http.url": "http://user/cards/6239ab53ee11cb000195b075"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "a89c5ca75d6b190f",
+      "id": "d0a30b8a7d299982",
+      "name": "get-resource",
+      "timestamp": 1647947232037000,
+      "duration": 4953,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "a89c5ca75d6b190f",
+      "name": "async",
+      "timestamp": 1647947232037000,
+      "duration": 4992,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-172"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "6abf2ac7688f1de7",
+      "id": "97bfc54e17da38b0",
+      "kind": "CLIENT",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947232037000,
+      "duration": 9000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "carts",
+        "http.method": "GET",
+        "http.path": "/carts/6239ab3cee11cb000195b074/items",
+        "http.url": "http://carts/carts/6239ab3cee11cb000195b074/items"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "25e2f903c3637586",
+      "id": "6abf2ac7688f1de7",
+      "name": "get-data-list",
+      "timestamp": 1647947232037000,
+      "duration": 9213,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getDataList"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "25e2f903c3637586",
+      "name": "async",
+      "timestamp": 1647947232037000,
+      "duration": 9262,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-173"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "97bfc54e17da38b0",
+      "id": "5ea066a4bb28cd7b",
+      "name": "get-items",
+      "timestamp": 1647947232043000,
+      "duration": 2979,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "6abf2ac7688f1de7",
+      "id": "97bfc54e17da38b0",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947232042000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "shared": true
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "4103b2f48225166e",
+      "id": "491dafb72a9f6e96",
+      "name": "authorize payment",
+      "timestamp": 1647947232050696,
+      "duration": 36,
+      "localEndpoint": {
+        "serviceName": "payment",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "lc": "payment",
+        "service": "payment"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "2a2b7a3423348253",
+      "id": "1d7ac8ef99e2b6d1",
+      "kind": "CLIENT",
+      "name": "http:/paymentauth",
+      "timestamp": 1647947232047000,
+      "duration": 1041000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "payment",
+        "http.method": "POST",
+        "http.path": "/paymentAuth",
+        "http.url": "http://payment/paymentAuth"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "5971fabd3e40a4e9",
+      "id": "2a2b7a3423348253",
+      "name": "post-resource",
+      "timestamp": 1647947232047000,
+      "duration": 1041392,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "postResource"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "5971fabd3e40a4e9",
+      "name": "async",
+      "timestamp": 1647947232047000,
+      "duration": 1041462,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-174"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "a718653cc2c9b86e",
+      "id": "4029525e9a489d2d",
+      "kind": "CLIENT",
+      "name": "http:/shipping",
+      "timestamp": 1647947233090000,
+      "duration": 3000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "shipping",
+        "http.method": "POST",
+        "http.path": "/shipping",
+        "http.url": "http://shipping/shipping"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "55d131cb3d00e37d",
+      "id": "a718653cc2c9b86e",
+      "name": "post-resource",
+      "timestamp": 1647947233090000,
+      "duration": 3415,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "postResource"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "8b6e324f47962590",
+      "id": "55d131cb3d00e37d",
+      "name": "async",
+      "timestamp": 1647947233089000,
+      "duration": 3670,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-175"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "id": "432901aa25545a03",
+      "kind": "SERVER",
+      "name": "http:/orders",
+      "timestamp": 1647947232035000,
+      "duration": 1061691,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "4029525e9a489d2d",
+      "id": "35298d548c965e03",
+      "name": "post-shipping",
+      "timestamp": 1647947233091000,
+      "duration": 1165,
+      "localEndpoint": {
+        "serviceName": "shipping",
+        "ipv4": "172.19.0.6",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ShippingController",
+        "mvc.controller.method": "postShipping"
+      }
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "a718653cc2c9b86e",
+      "id": "4029525e9a489d2d",
+      "kind": "SERVER",
+      "name": "http:/shipping",
+      "timestamp": 1647947233091000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "shipping",
+        "ipv4": "172.19.0.6",
+        "port": 80
+      },
+      "shared": true
+    },
+    {
+      "traceId": "432901aa25545a03",
+      "parentId": "1d7ac8ef99e2b6d1",
+      "id": "4103b2f48225166e",
+      "kind": "SERVER",
+      "name": "post /paymentauth",
+      "timestamp": 1647947232050654,
+      "duration": 1036190,
+      "localEndpoint": {
+        "serviceName": "payment",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "POST",
+        "http.url": "/paymentAuth",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "d9d3188a4013d400",
+      "parentId": "d9d3188a4013d400",
+      "id": "c833bea333a89335",
+      "name": "delete",
+      "timestamp": 1647947232023000,
+      "duration": 2800,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "CartsController",
+        "mvc.controller.method": "delete"
+      }
+    },
+    {
+      "traceId": "d9d3188a4013d400",
+      "id": "d9d3188a4013d400",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074",
+      "timestamp": 1647947232023000,
+      "duration": 3395,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "ec6adad6c2e58d23",
+      "id": "711d610484af840d",
+      "kind": "CLIENT",
+      "name": "http:/cards/6239ab53ee11cb000195b075",
+      "timestamp": 1647947231996000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/cards/6239ab53ee11cb000195b075",
+        "http.url": "http://user/cards/6239ab53ee11cb000195b075"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "1bd197319b0923ea",
+      "id": "5cf752ca8e0bf251",
+      "kind": "CLIENT",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947231996000,
+      "duration": 6000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "carts",
+        "http.method": "GET",
+        "http.path": "/carts/6239ab3cee11cb000195b074/items",
+        "http.url": "http://carts/carts/6239ab3cee11cb000195b074/items"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "25214c93eb616359",
+      "id": "1bd197319b0923ea",
+      "name": "get-data-list",
+      "timestamp": 1647947231996000,
+      "duration": 6287,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getDataList"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "25214c93eb616359",
+      "name": "async",
+      "timestamp": 1647947231996000,
+      "duration": 6412,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-167"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "4b85c3995e3951d0",
+      "id": "ec6adad6c2e58d23",
+      "name": "get-resource",
+      "timestamp": 1647947231995000,
+      "duration": 2929,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "4b85c3995e3951d0",
+      "name": "async",
+      "timestamp": 1647947231995000,
+      "duration": 3050,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-166"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "16f782df0ae1be1b",
+      "id": "19f3ac2a8c079420",
+      "kind": "CLIENT",
+      "name": "http:/addresses/6239ab6cee11cb000195b076",
+      "timestamp": 1647947231995000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/addresses/6239ab6cee11cb000195b076",
+        "http.url": "http://user/addresses/6239ab6cee11cb000195b076"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "3e9f59e638035af1",
+      "id": "16f782df0ae1be1b",
+      "name": "get-resource",
+      "timestamp": 1647947231995000,
+      "duration": 3855,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "3e9f59e638035af1",
+      "name": "async",
+      "timestamp": 1647947231995000,
+      "duration": 3974,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-164"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "546939b68d058724",
+      "id": "65baa05595d8c7e7",
+      "kind": "CLIENT",
+      "name": "http:/customers/6239ab3cee11cb000195b074",
+      "timestamp": 1647947231995000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "user",
+        "http.method": "GET",
+        "http.path": "/customers/6239ab3cee11cb000195b074",
+        "http.url": "http://user/customers/6239ab3cee11cb000195b074"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "c9dd9ee2dc757f46",
+      "id": "546939b68d058724",
+      "name": "get-resource",
+      "timestamp": 1647947231995000,
+      "duration": 4446,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "getResource"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "c9dd9ee2dc757f46",
+      "name": "async",
+      "timestamp": 1647947231995000,
+      "duration": 4487,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-165"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "e724a28e4ea3f8b5",
+      "id": "32bcb3eebc587cd2",
+      "kind": "CLIENT",
+      "name": "http:/paymentauth",
+      "timestamp": 1647947232003000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "payment",
+        "http.method": "POST",
+        "http.path": "/paymentAuth",
+        "http.url": "http://payment/paymentAuth"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "a08f8b84fe735ef7",
+      "id": "e724a28e4ea3f8b5",
+      "name": "post-resource",
+      "timestamp": 1647947232003000,
+      "duration": 2623,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "postResource"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "a08f8b84fe735ef7",
+      "name": "async",
+      "timestamp": 1647947232003000,
+      "duration": 2783,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-168"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "29d3a9918294e702",
+      "id": "1aa1bc7931e3b833",
+      "kind": "CLIENT",
+      "name": "http:/shipping",
+      "timestamp": 1647947232007000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "remoteEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "http.host": "shipping",
+        "http.method": "POST",
+        "http.path": "/shipping",
+        "http.url": "http://shipping/shipping"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "43b789c6647492bf",
+      "id": "29d3a9918294e702",
+      "name": "post-resource",
+      "timestamp": 1647947232007000,
+      "duration": 4755,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "class": "AsyncGetService",
+        "lc": "async",
+        "method": "postResource"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "547b6eeee278d580",
+      "id": "43b789c6647492bf",
+      "name": "async",
+      "timestamp": 1647947232007000,
+      "duration": 4831,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "async",
+        "thread": "SimpleAsyncTaskExecutor-169"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "a473b65479e88506",
+      "id": "547b6eeee278d580",
+      "name": "new-order",
+      "timestamp": 1647947231994000,
+      "duration": 20082,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "OrdersController",
+        "mvc.controller.method": "newOrder"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "id": "a473b65479e88506",
+      "kind": "SERVER",
+      "name": "http:/orders",
+      "timestamp": 1647947231994000,
+      "duration": 20939,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "1aa1bc7931e3b833",
+      "id": "05ec9475153a9cca",
+      "name": "post-shipping",
+      "timestamp": 1647947232010000,
+      "duration": 1559,
+      "localEndpoint": {
+        "serviceName": "shipping",
+        "ipv4": "172.19.0.6",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ShippingController",
+        "mvc.controller.method": "postShipping"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "29d3a9918294e702",
+      "id": "1aa1bc7931e3b833",
+      "kind": "SERVER",
+      "name": "http:/shipping",
+      "timestamp": 1647947232009000,
+      "duration": 2000,
+      "localEndpoint": {
+        "serviceName": "shipping",
+        "ipv4": "172.19.0.6",
+        "port": 80
+      },
+      "shared": true
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "5cf752ca8e0bf251",
+      "id": "8470b8dce2f0273c",
+      "name": "get-items",
+      "timestamp": 1647947231998000,
+      "duration": 2832,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "1bd197319b0923ea",
+      "id": "5cf752ca8e0bf251",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947231997000,
+      "duration": 4000,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "shared": true
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "1bed62c45f970751",
+      "id": "5e5fad95cf7d35b2",
+      "name": "authorize payment",
+      "timestamp": 1647947232004878,
+      "duration": 76,
+      "localEndpoint": {
+        "serviceName": "payment",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "lc": "payment",
+        "service": "payment"
+      }
+    },
+    {
+      "traceId": "a473b65479e88506",
+      "parentId": "32bcb3eebc587cd2",
+      "id": "1bed62c45f970751",
+      "kind": "SERVER",
+      "name": "post /paymentauth",
+      "timestamp": 1647947232004785,
+      "duration": 188,
+      "localEndpoint": {
+        "serviceName": "payment",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "POST",
+        "http.url": "/paymentAuth",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1358a4362cce4e91",
+      "id": "746e0848dcbce992",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947227263198,
+      "duration": 1112,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "7382985a151e5767",
+      "id": "6e2a0b760e74241d",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947227262773,
+      "duration": 1093,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1e07cebed2ab63b8",
+      "id": "48b9db3b013776a1",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947226395129,
+      "duration": 585,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "10246fc3616c04a1",
+      "id": "1585cc684da3448c",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947226391120,
+      "duration": 1177,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "ef80145512ecfd64",
+      "parentId": "ef80145512ecfd64",
+      "id": "c990558bc7b82c6a",
+      "name": "get-items",
+      "timestamp": 1647947226381000,
+      "duration": 4004,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "ef80145512ecfd64",
+      "id": "ef80145512ecfd64",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947226381000,
+      "duration": 4652,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "414c6ed8364e85ec",
+      "id": "3c488afbd1cd2fb9",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947226333203,
+      "duration": 712,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?size\u003d3",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "9cb599780f2de1a7",
+      "parentId": "9cb599780f2de1a7",
+      "id": "fab602a6cd11a8c5",
+      "name": "get-items",
+      "timestamp": 1647947226280000,
+      "duration": 2814,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "9cb599780f2de1a7",
+      "id": "9cb599780f2de1a7",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947226279000,
+      "duration": 3321,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "f87181d1d932777d",
+      "parentId": "f87181d1d932777d",
+      "id": "f2dfccc93927960a",
+      "name": "update-item",
+      "timestamp": 1647947226195000,
+      "duration": 3372,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "updateItem"
+      }
+    },
+    {
+      "traceId": "f87181d1d932777d",
+      "id": "f87181d1d932777d",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947226194000,
+      "duration": 3841,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "60f1bcec24635d4e",
+      "id": "54ab2935f946af2f",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947226192316,
+      "duration": 594,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "288818637c9ec23f",
+      "parentId": "288818637c9ec23f",
+      "id": "93aae002c20341db",
+      "name": "update-item",
+      "timestamp": 1647947226177000,
+      "duration": 6494,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "updateItem"
+      }
+    },
+    {
+      "traceId": "288818637c9ec23f",
+      "id": "288818637c9ec23f",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947226177000,
+      "duration": 6996,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3299397be2123e05",
+      "id": "7f537bd14764559d",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947226173827,
+      "duration": 746,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0f8697508595a3f9",
+      "id": "4ac7dc7c06a08a0e",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947218727109,
+      "duration": 579,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "22f563da138acc00",
+      "id": "012933886a27f438",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947218724336,
+      "duration": 617,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "27323d3598ee54f4",
+      "id": "3cfa91741960c9e2",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947218678090,
+      "duration": 561,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "48c1519bde467cfd",
+      "id": "5223588bc5446c53",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947218675061,
+      "duration": 685,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "e8c12d22605f1fbe",
+      "parentId": "e8c12d22605f1fbe",
+      "id": "49ffc3f344bbdc7d",
+      "name": "get-items",
+      "timestamp": 1647947218669000,
+      "duration": 2918,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "e8c12d22605f1fbe",
+      "id": "e8c12d22605f1fbe",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947218669000,
+      "duration": 3663,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "144fb840b92247e0",
+      "id": "5566a20278f45412",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947218618252,
+      "duration": 928,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?size\u003d3",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "cb04a7d0e1961123",
+      "parentId": "cb04a7d0e1961123",
+      "id": "9a96896f9d567315",
+      "name": "get-items",
+      "timestamp": 1647947218565000,
+      "duration": 2750,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "cb04a7d0e1961123",
+      "id": "cb04a7d0e1961123",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947218565000,
+      "duration": 3267,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3a779786f0bcf965",
+      "id": "7e155650950a2dc6",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947214250230,
+      "duration": 564,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "6dba229f4d22cf2a",
+      "id": "454add0103c89c05",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947214247406,
+      "duration": 801,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0984107dddff9815",
+      "id": "735fcdf1736cfce5",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947214243954,
+      "duration": 915,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?sort\u003did\u0026size\u003d3\u0026tags\u003dblue",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "754cc603f28f6e08",
+      "parentId": "754cc603f28f6e08",
+      "id": "b53eb5773304fe26",
+      "name": "get-items",
+      "timestamp": 1647947214193000,
+      "duration": 2732,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "754cc603f28f6e08",
+      "id": "754cc603f28f6e08",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947214192000,
+      "duration": 3206,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "13277cc23cbfbbcf",
+      "id": "47e313aa95794e26",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947214179324,
+      "duration": 618,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/808a2de1-1aaa-4c25-a9b9-6612e8f29a38",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "18967765ccf9e7ec",
+      "id": "707633084f392b7f",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947209994350,
+      "duration": 850,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "72f2cbe8bedafcf0",
+      "id": "387a91fa3b8c172e",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947209989413,
+      "duration": 1289,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "7acfb7deb642f9af",
+      "id": "641f8831c73f4862",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947209943079,
+      "duration": 758,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?sort\u003did\u0026size\u003d3\u0026tags\u003dblue",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "f445d06acfb2ddd7",
+      "parentId": "f445d06acfb2ddd7",
+      "id": "01f59554dad7c04a",
+      "name": "get-items",
+      "timestamp": 1647947209938000,
+      "duration": 2309,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "f445d06acfb2ddd7",
+      "id": "f445d06acfb2ddd7",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947209938000,
+      "duration": 2797,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3fedf870efd3ed2d",
+      "id": "354cac7cb1a859d4",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947209888337,
+      "duration": 697,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/808a2de1-1aaa-4c25-a9b9-6612e8f29a38",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "6d0366d5d135ec7e",
+      "id": "10ab62205b446019",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947207240252,
+      "duration": 523,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "65a0399795748b41",
+      "id": "3a333dc2eb919e1d",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947207236776,
+      "duration": 655,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "33de536770c9b362",
+      "parentId": "33de536770c9b362",
+      "id": "dac2e8151278712f",
+      "name": "get-items",
+      "timestamp": 1647947207178000,
+      "duration": 2725,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "33de536770c9b362",
+      "id": "33de536770c9b362",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947207178000,
+      "duration": 3291,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "5be0b75c27865975",
+      "id": "56ff4d0055b5a4e7",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947207171553,
+      "duration": 274,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "2205af58d651ada9",
+      "id": "6c567f361d0eadcf",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947207168565,
+      "duration": 883,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d1\u0026size\u003d6\u0026tags\u003dformal",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "16ab2a269a90eb7c",
+      "id": "7fdc0519f163dd89",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947207118804,
+      "duration": 1178,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003dformal",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "2b77860d71e4f07a",
+      "id": "152235596c98d978",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947201621312,
+      "duration": 623,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "4c71811718bdce6d",
+      "id": "5bc8d29b804c62a9",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947201618556,
+      "duration": 626,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "a63226cbdc2286c3",
+      "parentId": "a63226cbdc2286c3",
+      "id": "8ced092be046f0d4",
+      "name": "get-items",
+      "timestamp": 1647947201569000,
+      "duration": 2490,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "a63226cbdc2286c3",
+      "id": "a63226cbdc2286c3",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947201569000,
+      "duration": 3051,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "4ab3de455b75f27e",
+      "id": "45434ef0f1b06c49",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947201561890,
+      "duration": 581,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d1\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "007401047c5f5df4",
+      "id": "5cef39f17a7a956e",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947201559827,
+      "duration": 352,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "7b2d63a27f70b31b",
+      "id": "0270774d9e150cb1",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947201510410,
+      "duration": 947,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "2ae6e9f5f38a794c",
+      "id": "23551483bec6f1fa",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947194926809,
+      "duration": 868,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3fb233c1638ea58f",
+      "id": "79db33a02165527e",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947194923268,
+      "duration": 680,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "206dd0f2356f2976",
+      "parentId": "206dd0f2356f2976",
+      "id": "689b0861d26b7f04",
+      "name": "get-items",
+      "timestamp": 1647947194915000,
+      "duration": 2364,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "206dd0f2356f2976",
+      "id": "206dd0f2356f2976",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947194914000,
+      "duration": 2826,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "2020d3c0a2751c93",
+      "id": "391ee993a3d601d3",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947194858260,
+      "duration": 718,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?size\u003d5",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0df1abe273ec5939",
+      "id": "3a18c4978f9c0ca0",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947188538606,
+      "duration": 694,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3f9d67aa266b5a0a",
+      "id": "035e618efd322aad",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947188534745,
+      "duration": 719,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "47819092cd55d4f0",
+      "id": "5f5915c12153443d",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947188531714,
+      "duration": 650,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "428a395738a65f19",
+      "id": "5643915eb8c743e5",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947188481018,
+      "duration": 717,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "d3c7110271e7d0b3",
+      "parentId": "d3c7110271e7d0b3",
+      "id": "e0ac5b01d36ab313",
+      "name": "get-items",
+      "timestamp": 1647947188474000,
+      "duration": 2962,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "d3c7110271e7d0b3",
+      "id": "d3c7110271e7d0b3",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947188474000,
+      "duration": 3510,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "4fb0a3329bac96df",
+      "id": "13bdb5fc78973753",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947188468014,
+      "duration": 683,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?size\u003d3",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "e9b29c7f48889211",
+      "parentId": "e9b29c7f48889211",
+      "id": "3aab124484bbafd7",
+      "name": "get-items",
+      "timestamp": 1647947188409000,
+      "duration": 2157,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "e9b29c7f48889211",
+      "id": "e9b29c7f48889211",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947188408000,
+      "duration": 2722,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1313d4f795b46c2a",
+      "id": "5a671b74b5fe7569",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947166418540,
+      "duration": 568,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "612be7f0e52d179a",
+      "id": "0d6aaae83122cd46",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947166416234,
+      "duration": 594,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "dd565c11de648e57",
+      "parentId": "dd565c11de648e57",
+      "id": "f186c2fbef114fe9",
+      "name": "get-items",
+      "timestamp": 1647947166405000,
+      "duration": 3374,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "dd565c11de648e57",
+      "id": "dd565c11de648e57",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947166405000,
+      "duration": 4041,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3af2889754020c84",
+      "id": "73b963f0dc4813ed",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947166347172,
+      "duration": 902,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?size\u003d5",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "5e39ce8f07e52ebc",
+      "id": "44c3fab3f6788ca9",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947164804890,
+      "duration": 1157,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "698fdc7e37ab6204",
+      "id": "5e010434c13919c0",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947164799368,
+      "duration": 1395,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "ec1ab39a0e4c66a5",
+      "parentId": "ec1ab39a0e4c66a5",
+      "id": "027b8a7c00b3461d",
+      "name": "get-items",
+      "timestamp": 1647947163903000,
+      "duration": 3800,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "ec1ab39a0e4c66a5",
+      "id": "ec1ab39a0e4c66a5",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947163902000,
+      "duration": 4356,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "07327d2cd677ed5e",
+      "id": "6df514270839bd6b",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947163850877,
+      "duration": 603,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d2\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "49813bffaee8396b",
+      "id": "0f4266efd9496da0",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947163847549,
+      "duration": 334,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "15ee9ff1bc8a1a2d",
+      "id": "79278080acab8dc3",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947163803293,
+      "duration": 797,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "6b6ca17316a3d7c3",
+      "parentId": "6b6ca17316a3d7c3",
+      "id": "db69dcce24ac6e3e",
+      "name": "add-to-cart",
+      "timestamp": 1647947163713000,
+      "duration": 9429,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "addToCart"
+      }
+    },
+    {
+      "traceId": "6b6ca17316a3d7c3",
+      "id": "6b6ca17316a3d7c3",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947163713000,
+      "duration": 10016,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "7f9a3fbeab745f12",
+      "id": "21be0ca19f81ba06",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947163710042,
+      "duration": 955,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/a0a4f044-b040-410d-8ead-4de0446aec7e",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "1bdc9121f337776a",
+      "id": "69ea40823fb84adc",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947159281373,
+      "duration": 1027,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0d7dc105227c97c8",
+      "parentId": "0d7dc105227c97c8",
+      "id": "7231081755f7ca0d",
+      "name": "get-items",
+      "timestamp": 1647947158361000,
+      "duration": 3138,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "0d7dc105227c97c8",
+      "id": "0d7dc105227c97c8",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947158360000,
+      "duration": 4133,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "2cb2574a032d3f61",
+      "id": "6b080b6aed2786fc",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947158350990,
+      "duration": 692,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d2\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "426d7d84cd75be14",
+      "id": "104b3f3b3b1fff55",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947158348024,
+      "duration": 402,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "552adfc15800ba59",
+      "id": "79b6d23a987c6ad9",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947158297008,
+      "duration": 944,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "01567c8f1a22d1ee",
+      "parentId": "01567c8f1a22d1ee",
+      "id": "3e9799444875e67c",
+      "name": "add-to-cart",
+      "timestamp": 1647947158212000,
+      "duration": 8605,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "addToCart"
+      }
+    },
+    {
+      "traceId": "01567c8f1a22d1ee",
+      "id": "01567c8f1a22d1ee",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947158212000,
+      "duration": 9281,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "79cf3a8650ff97bc",
+      "id": "58eda73973fbbbcb",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947158207732,
+      "duration": 915,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/d3588630-ad8e-49df-bbd7-3167f7efb246",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "cf21fa349579dcb4",
+      "parentId": "cf21fa349579dcb4",
+      "id": "e1320df96a90a526",
+      "name": "get-items",
+      "timestamp": 1647947156049000,
+      "duration": 2035,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "cf21fa349579dcb4",
+      "id": "cf21fa349579dcb4",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947156049000,
+      "duration": 2764,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "4b70890dabe24ce6",
+      "id": "538176310cb2d523",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947156033120,
+      "duration": 916,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d2\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "579ff1e0ce457e68",
+      "id": "571d6467a30240cd",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947156032817,
+      "duration": 1231,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "544af880414b266f",
+      "id": "7a4926ff727109db",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947156029866,
+      "duration": 955,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "0f7a9046b6160635",
+      "parentId": "0f7a9046b6160635",
+      "id": "5ac97fbaae4ba612",
+      "name": "get-items",
+      "timestamp": 1647947150920000,
+      "duration": 1777,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "0f7a9046b6160635",
+      "id": "0f7a9046b6160635",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947150919000,
+      "duration": 2539,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "589bf74717f12b59",
+      "id": "63f8ed90f29749ab",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947150918752,
+      "duration": 867,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d1\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "501873d025874e98",
+      "id": "5fae86c85fc1e1b0",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947150914687,
+      "duration": 419,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "751e4dcbeaa41016",
+      "id": "2fa61494ab362c8f",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947150914572,
+      "duration": 623,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "369e85ce69e7ea3f",
+      "id": "0dcb60c088ac9202",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947143549507,
+      "duration": 573,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/819e1fbf-8b7e-4f6d-811f-693534916a8b",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "5a76186c8514530c",
+      "id": "6609dc1a07e67154",
+      "kind": "SERVER",
+      "name": "get /catalogue/{id}",
+      "timestamp": 1647947143549174,
+      "duration": 647,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/3395a43e-2d88-40de-b95f-e00e1502085b",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "e6e8ccd33a2a92c7",
+      "parentId": "e6e8ccd33a2a92c7",
+      "id": "ee41345bc353cda8",
+      "name": "get-items",
+      "timestamp": 1647947143540000,
+      "duration": 1587,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "e6e8ccd33a2a92c7",
+      "id": "e6e8ccd33a2a92c7",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947143540000,
+      "duration": 2126,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "88cb59fe08161d7b",
+      "parentId": "88cb59fe08161d7b",
+      "id": "9d41c400330deb23",
+      "name": "get-item-resource",
+      "timestamp": 1647947143530000,
+      "duration": 5183,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "RepositoryEntityController",
+        "mvc.controller.method": "getItemResource"
+      }
+    },
+    {
+      "traceId": "88cb59fe08161d7b",
+      "id": "88cb59fe08161d7b",
+      "kind": "SERVER",
+      "name": "http:/orders/6239abc597a1c000080287b2",
+      "timestamp": 1647947143529000,
+      "duration": 6109,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "14fe5c6dc26949d7",
+      "parentId": "14fe5c6dc26949d7",
+      "id": "5c233fa5fdb0a2f3",
+      "name": "get-items",
+      "timestamp": 1647947141597000,
+      "duration": 1852,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "14fe5c6dc26949d7",
+      "id": "14fe5c6dc26949d7",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947141596000,
+      "duration": 2397,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3750616393d89cc6",
+      "parentId": "3750616393d89cc6",
+      "id": "a73fa17cc0937acb",
+      "name": "execute-search",
+      "timestamp": 1647947141583000,
+      "duration": 6610,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "RepositorySearchController",
+        "mvc.controller.method": "executeSearch"
+      }
+    },
+    {
+      "traceId": "3750616393d89cc6",
+      "id": "3750616393d89cc6",
+      "kind": "SERVER",
+      "name": "http:/orders/search/customerid",
+      "timestamp": 1647947141582000,
+      "duration": 7685,
+      "localEndpoint": {
+        "serviceName": "orders",
+        "ipv4": "172.19.0.9",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "83b95c3e26132d03",
+      "parentId": "83b95c3e26132d03",
+      "id": "c811a24ad2468218",
+      "name": "get-items",
+      "timestamp": 1647947134326000,
+      "duration": 2757,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      },
+      "tags": {
+        "lc": "unknown",
+        "mvc.controller.class": "ItemsController",
+        "mvc.controller.method": "getItems"
+      }
+    },
+    {
+      "traceId": "83b95c3e26132d03",
+      "id": "83b95c3e26132d03",
+      "kind": "SERVER",
+      "name": "http:/carts/6239ab3cee11cb000195b074/items",
+      "timestamp": 1647947134325000,
+      "duration": 3864,
+      "localEndpoint": {
+        "serviceName": "carts",
+        "ipv4": "172.19.0.10",
+        "port": 80
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "3517081027a817fd",
+      "id": "66128b067c8fd0f7",
+      "kind": "SERVER",
+      "name": "get /catalogue",
+      "timestamp": 1647947134325157,
+      "duration": 1106,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue?page\u003d1\u0026size\u003d6\u0026tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "560fff10af237e8c",
+      "id": "582bda8e54e7d56a",
+      "kind": "SERVER",
+      "name": "get /tags",
+      "timestamp": 1647947133395667,
+      "duration": 324,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/tags",
+        "span.kind": "server"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "6384e32f9aaa9a8c",
+      "id": "28b9542362db8f14",
+      "kind": "SERVER",
+      "name": "get /catalogue/size",
+      "timestamp": 1647947133346486,
+      "duration": 1445,
+      "localEndpoint": {
+        "serviceName": "catalogue",
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      },
+      "tags": {
+        "http.method": "GET",
+        "http.url": "/catalogue/size?tags\u003d",
+        "span.kind": "server"
+      }
+    }
+  ]
+]

@@ -1,0 +1,130 @@
+[
+    [
+        {
+            "traceId": "trace1",
+            "parentId": "api-gateway_id",
+            "id": "api-gateway_id",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            }
+        },
+        {
+            "traceId": "trace1",
+            "parentId": "api-gateway_id",
+            "id": "serviceA_id",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace1",
+            "parentId": "serviceA_id",
+            "id": "serviceC_id",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceC"
+            },
+            "remoteEndpoint": {
+                "serviceName": "redis"
+            },
+            "tags": {
+                "db.system": "redis"
+            }
+        }
+    ],
+    [
+        {
+            "traceId": "trace2",
+            "parentId": "api-gateway_id2",
+            "id": "api-gateway_id2",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "api-gateway_id2",
+            "id": "serviceA_id2",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "serviceA_id2",
+            "id": "serviceB_id2",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceB"
+            }
+        },
+        {
+            "traceId": "trace2",
+            "parentId": "serviceB_id2",
+            "id": "serviceC_id2",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceC"
+            },
+            "remoteEndpoint": {
+                "serviceName": "redis"
+            },
+            "tags": {
+                "db.system": "redis"
+            }
+        }
+    ],
+    [
+        {
+            "traceId": "trace3",
+            "parentId": "api-gateway_id3",
+            "id": "api-gateway_id3",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "api-gateway"
+            }
+        },
+        {
+            "traceId": "trace3",
+            "parentId": "api-gateway_id3",
+            "id": "serviceA_id3",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceA"
+            }
+        },
+        {
+            "traceId": "trace3",
+            "parentId": "serviceA_id3",
+            "id": "serviceB_id3",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "serviceB"
+            }
+        },
+        {
+            "traceId": "trace3",
+            "parentId": "serviceB_id3",
+            "id": "sql_id3",
+            "timestamp": 1680620858928691,
+            "duration": 377,
+            "localEndpoint": {
+                "serviceName": "sql"
+            }
+        }
+    ]
+  ]

@@ -1,0 +1,118 @@
+[
+  [
+    {
+      "traceId": "trace1",
+      "id": "api-gateway_id",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "api-gateway"
+      }
+    },
+    {
+      "traceId": "trace1",
+      "parentId": "api-gateway_id",
+      "id": "serviceA_id",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceA"
+      }
+    },
+    {
+      "traceId": "trace1",
+      "parentId": "serviceA_id",
+      "id": "serviceB_id",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceB"
+      },
+      "remoteEndpoint": {
+        "serviceName": "redis-cart:6379",
+        "port": 6379
+      },
+      "tags": {
+        "db.system": "redis"
+      }
+    },
+    {
+      "traceId": "trace1",
+      "parentId": "serviceA_id",
+      "id": "serviceC_id",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceC"
+      },
+      "remoteEndpoint": {
+        "serviceName": "redis-cart:6379",
+        "port": 6379
+      },
+      "tags": {
+        "db.system": "redis"
+      }
+    }
+  ],
+  [
+    {
+      "traceId": "trace2",
+      "id": "api-gateway_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "api-gateway"
+      }
+    },
+    {
+      "traceId": "trace2",
+      "parentId": "api-gateway_id2",
+      "id": "serviceA_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceA"
+      }
+    },
+    {
+      "traceId": "trace2",
+      "parentId": "serviceA_id2",
+      "id": "serviceB_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceB"
+      }
+    },
+    {
+      "traceId": "trace2",
+      "parentId": "serviceB_id2",
+      "id": "serviceC_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceC"
+      }
+    },
+    {
+      "traceId": "trace2",
+      "parentId": "serviceA_id2",
+      "id": "serviceC_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceC"
+      }
+    },
+    {
+      "traceId": "trace2",
+      "parentId": "serviceC_id2",
+      "id": "serviceA_id2",
+      "timestamp": 1647943646909605,
+      "duration": 377,
+      "localEndpoint": {
+        "serviceName": "serviceA"
+      }
+    }
+  ]
+]

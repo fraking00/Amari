@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d11" for="edge" attr.name="weight" attr.type="string" />
+  <key id="d10" for="edge" attr.name="id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="label" attr.type="string" />
+  <key id="d8" for="edge" attr.name="isDB" attr.type="boolean" />
+  <key id="d7" for="edge" attr.name="weight" attr.type="long" />
+  <key id="d6" for="edge" attr.name="labelE" attr.type="string" />
+  <key id="d5" for="node" attr.name="label" attr.type="string" />
+  <key id="d4" for="node" attr.name="shape_type" attr.type="string" />
+  <key id="d3" for="node" attr.name="y" attr.type="string" />
+  <key id="d2" for="node" attr.name="x" attr.type="string" />
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="labelV" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="n0">
+      <data key="d0">service_interface</data>
+      <data key="d1">api-gateway</data>
+      <data key="d2">140.9853515625</data>
+      <data key="d3">0.0</data>
+      <data key="d4">rectangle</data>
+      <data key="d5">api-gateway</data>
+    </node>
+    <node id="n1">
+      <data key="d0">service_interface</data>
+      <data key="d1">serviceA</data>
+      <data key="d2">150.3310546875</data>
+      <data key="d3">105.0</data>
+      <data key="d4">rectangle</data>
+      <data key="d5">serviceA</data>
+    </node>
+    <node id="n2">
+      <data key="d0">service_interface</data>
+      <data key="d1">serviceB</data>
+      <data key="d2">150.3310546875</data>
+      <data key="d3">270.0</data>
+      <data key="d4">rectangle</data>
+      <data key="d5">serviceB</data>
+    </node>
+    <node id="n3">
+      <data key="d0">service_interface</data>
+      <data key="d1">serviceC</data>
+      <data key="d2">0.0</data>
+      <data key="d3">360.0</data>
+      <data key="d4">rectangle</data>
+      <data key="d5">serviceC</data>
+    </node>
+    <node id="n4">
+      <data key="d0">service_interface</data>
+      <data key="d1">redis</data>
+      <data key="d2">160.3330078125</data>
+      <data key="d3">450.0</data>
+      <data key="d4">rectangle</data>
+      <data key="d5">redis</data>
+    </node>
+    <node id="n5">
+      <data key="d1">appoggio</data>
+      <data key="d0">n5</data>
+    </node>
+    <node id="n6">
+      <data key="d1">tester</data>
+      <data key="d0">n6</data>
+    </node>
+    <edge source="n0" target="n1">
+      <data key="d6">call</data>
+      <data key="d7">2</data>
+      <data key="d8">False</data>
+      <data key="d9">false</data>
+      <data key="d10">e1</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="d6">call</data>
+      <data key="d7">2</data>
+      <data key="d8">False</data>
+      <data key="d9">false</data>
+      <data key="d10">e2</data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="d6">call</data>
+      <data key="d7">2</data>
+      <data key="d8">False</data>
+      <data key="d9">false</data>
+      <data key="d10">e3</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="d6">call</data>
+      <data key="d7">1</data>
+      <data key="d8">True</data>
+      <data key="d9">true</data>
+      <data key="d10">e4</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="d6">calls</data>
+      <data key="d11">3000</data>
+      <data key="d8">False</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="d6">call</data>
+      <data key="d7">1</data>
+      <data key="d8">True</data>
+      <data key="d9">true</data>
+      <data key="d10">e6</data>
+    </edge>
+    <edge source="n3" target="n6">
+      <data key="d6">calls</data>
+      <data key="d11">300</data>
+      <data key="d8">False</data>
+    </edge>
+  </graph>
+</graphml>
